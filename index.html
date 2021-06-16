@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="icon" href="img/logo.png" type="image/gif" sizes="16x16">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Biskuat</title>
+    <style>
+      body{
+        background-color: #fbf0df;
+      }
+       .card img {
+            object-fit: cover;
+            object-position: center;
+            height: 190px;
+            
+        }
+
+        .card {
+            margin: 10px 0 10px 0;
+        }
+
+
+        div#produk img:hover {
+          transform: scale(1.1);
+        }
+
+        div#produk img{
+          margin: 10px 0 10px 0;
+          transition: transform .2s; /* Animation */
+        }
+
+
+    </style>
+  </head>
+  <body>8
+      <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" class="rounded-circle" alt="" width="50" height="50">  
+            <span>Biskuat</span> </a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#produk">Produk</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#kontak">Kontak</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Social Media
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="https://www.instagram.com/fadhil.adhaa/" target="_blank">
+                    <i class="bi bi-instagram"></i>Instagram
+         </a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    <!-- carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" style="margin-top: 70px;" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/carousel 1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/carousel 2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/carousel 3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/carousel 4.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <!-- kelebihan produk -->
+    <div class="container" style="margin-top: 70px;" id="produk">
+      <h1 class="text-center">Produk</h1>
+      <hr>
+      <div class="row">
+        <div class="col-md-3 d-flex justify-content-center col-sm-6">
+          <div class="card" style="width: 18rem;">
+            <img src="img/produk-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Biskuat Biscuit Wonderfull 84G
+                <span class="badge bg-success">Rp.5.500</span>
+              </h5>
+               <!-- Button trigger modal -->
+               <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#wonderful">
+                Rincian Produk
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="wonderful" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Biskuat Biscuit Wonderfull 84Gl</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Biskuit pertama di indonesia diperkaya dengan lezatnya rasa unik butter dan cashew
+                      </p>
+                      <br>
+
+                        <h5>PLU :</h5>
+                        <p>
+                          20113382
+                        </p>
+                        <br>
+
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center col-sm-6">
+          <div class="card" style="width: 18rem;">
+            <img src="img/produk-4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Biskuat Bolu Cokelat 16GR <br>
+                <span class="badge bg-success">Rp.6.300</span>
+              </h5>
+                 <!-- Button trigger modal -->
+                 <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#boluCokelat">
+                  Rincian Produk
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="boluCokelat" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Biskuat Bolu Cokelat 16GR</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                      
+  
+                          <h5>Deskripsi Produk :</h5>
+                          <p>
+                            Biskuat Bolu menambah ragam jajanan warung untuk jenis bolu. Bolu siap saji ini merupakan cemilan umum yang dapat dinikmati kapan saja , 
+                            baik secara pribadi maupun pada acara khusus bersama rekan maupun keluarga. Biskuat Bolu menawarkan bolu siap saji dalam kemasan ringkas dan modern , 
+                            terbuat dari bahan-bahan berkualitas nan higienis dengan rasa coklat yang lezat......
+                          </p>
+                          <br>
+  
+                      </div>
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center col-sm-6">
+          <div class="card" style="width: 18rem;">
+            <img src="img/produk 2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Biskuat Biscuit Energi Coklat 140GR
+                <br>
+                <span class="badge bg-success">Rp.8.800</span>
+              </h5>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#energiCoklat">
+                    Rincian Produk
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="energiCoklat" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Biskuat Biscuit Energi Coklat 140GRl</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        
+                            <h5>KOMPOSISI :</h5>
+                            <p>Tepung terigu, gula, minyak nabati (mengandung antioksidan TBHQ), bubuk cokelat, sirup glukosa, 
+                              garam, vitamin & mineral, pati jagung, susu bubuk, 
+                              pengembang (natrium bikarbonat, natrium asam pirofosfat & ammonium bikarbonat), perisa (vanila)</p>
+                            <br>
+
+                            <h5>TAKARAN PER SERVING :</h5>
+                            <p>
+                              Energi total 70kkal, Energi dari lemak 20kkal, Lemak total 2g, Protein 1g, Karbohidrat total 12g, Gula 3g, Natrium 65mg. %AKG : Vitamin A 10%, Vitamin B1 15%, Vitamin B2 15%, Vitamin B3 10%, Vitamin B6 10%, Vitamin B12 10%, Vitamin D 15%, Vitamin E 8%, asam folat 8%, Kalsium 8%, Selenium 8%, Zat besi 10%, Iodium 15%, seng 10%, Magnesium 6%
+                            </p>
+                            <br>
+
+                            <h5>TAKARAN PER KEMASAN :</h5>
+                            <p>
+                                Sajian per kemasan : 11
+                            </p>
+                            <br>
+
+                            <h5>TAKARAN SAJI :</h5>
+                            <p>
+                              5 keping (16g)
+                            </p>
+                            <br>
+
+                            <h5>PLU :</h5>
+                            <p>20013662</p>  
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center col-sm-6">
+          <div class="card" style="width: 18rem;">
+            <img src="img/produk-3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Biskuat Biscuit Original 140GR
+                <br>
+                <span class="badge bg-success">Rp.8.800</span>
+              </h5>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#original">
+                Rincian Produk
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="original" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Biskuat Biscuit Original 140GR</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    
+                      <h5>KOMPOSISI :</h5>
+                            <p>Tepung terigu, gula, minyak nabati (mengandung antioksidan TBHQ), sirup glukosa, garam, vitamin & mineral, sirup fruktosa, pati jagung, susu bubuk, pengemulsi (lesitin kedelai), pengembang (natrium bikarbonat, natrium asam pirofosfat & ammonium bikarbonat), perisa artifisial (vanila,mentega)</p>
+                            <br>
+
+                            <h5>TAKARAN PER SERVING :</h5>
+                            <p>
+                              Energi total 45kkal, Energi dari lemak 10kkal, Lemak total 1.5g, lemak jenuh 0.5g, Protein 1g, Karbohidrat total 7g, Gula 2g, Natrium 50mg. %AKG : Vitamin A 8%, Vitamin B1 6%, Vitamin B2 8%, Vitamin B3 6%, Vitamin B6 4%, Vitamin B12 4%, Vitamin D 4%, Vitamin E 2%, asam folat 4%, Kalsium 2%, Selenium 4%, Zat besi 4%, Iodium 8%, seng 4%, Magnesium 2%
+                            </p>
+                            <br>
+
+                            <h5>TAKARAN PER KEMASAN :</h5>
+                            <p>
+                                Sajian per kemasan : 14
+                            </p>
+                            <br>
+
+                            <h5>TAKARAN SAJI :</h5>
+                            <p>
+                              Takaran saji: 10g
+                            </p>
+                            <br>
+
+                            <h5>PLU :</h5>
+                            <p>20014537</p>  
+
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- promosi -->
+    <div class="container mt-5" id="produk">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 text-center">
+            <img src="img/102688784_3346941421996966_7928717981788483278_n.jpg" alt="" style="width: 100%;">
+          </div>
+          <div class="col-md-6 col-sm-6 text-center">
+            <img src="img/128872672_3863782806979489_4052513634401999783_n.jpg" alt="" style="width: 100%;">
+          </div>
+            <div class="col-lg-12 col-md-5 text-center">
+                <img src="img/185778806_4335428306481601_1129775722874341040_n.jpg" alt="" style="width: 100%;">
+            </div>
+            <div class="col-lg-12 col-md-5 text-center">
+                <img src="img/promo.jpg" alt="" style="width: 100%;">
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div class="container mt-5 bg-danger p-4 text-white" id="kontak">
+        <h2>Kontak</h2>
+        <p>Sampaikan pesan kamu dalam contact form dibawah</p>
+        <hr>
+        <div class="row bg-danger">
+            <div class="col-lg-12 p-4 col-md-5 bg-danger">
+                <form action="">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nama Lengkap</label>
+                        <input type="text" class="form-control" id="nama" placeholder="Masukkan nama lengkap kamu">
+                      </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nomor Handphone</label>
+                        <input type="number" class="form-control" id="nohp" placeholder="Masukkan nomor handphone kamu">
+                      </div>
+                      <hr>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Isi Pesan</label>
+                        <textarea class="form-control" id="isipesan" placeholder="Tuliskan rincian pesan kamu di form ini ya" rows="3"></textarea>
+                      </div>
+                      <a href="javascript:void(0)" id="kirim" class="btn btn-lg btn-outline-warning">Kirim Pesan</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <hr class="featurette-divider">
+
+    <footer class="container">
+        <p class="float-end"><a href="#">Kembali ke Atas</a></p>
+        <p class="fw-bold">&copy; Muhammad Fadhil Adha(defadels) &middot;</p>
+      </footer>
+    </main>
+
+    <script>
+      document.querySelector("#kirim").addEventListener("click", kirimPesan);
+  
+      function kirimPesan() {
+      const linkWA = 'https://wa.me/6282273318016?text='; 
+
+      const namaLengkap =  document.querySelector("#nama").value;
+
+      const noHp = document.querySelector("#nohp").value;
+
+      const isiPesan = document.querySelector("#isipesan").value;
+
+       
+       const pesan ="Halo, nama saya " + namaLengkap + ". Dengan nomor handphone " + noHp + " Saya ingin menyampaikan, bahwa" + " " + isiPesan;
+
+       window.open(linkWA+pesan);
+      }
+
+    </script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
